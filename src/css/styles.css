@@ -1,0 +1,96 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.gallery {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 24px 156px;
+  justify-content: center;
+  gap: 24px;
+}
+.modal {
+  width: 1112px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border-radius: 8px;
+  gap: 16px;
+}
+label {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+input {
+  width: 360px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+}
+input:hover {
+  border: 1px solid #000;
+}
+input:active {
+  border: 1px solid #808080;
+}
+textarea {
+  width: 360px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  padding: 14px 24px;
+}
+button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4e75ff;
+}
+button:hover {
+  background: #6c8cff;
+}
