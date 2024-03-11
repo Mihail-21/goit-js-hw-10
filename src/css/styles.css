@@ -1,96 +1,145 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
+@import url('./vite-promo.css');
 
-.gallery-image {
-  display: block;
-  width: 360px;
-  height: 200px;
-  flex-shrink: 0;
-}
-.gallery {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 24px 156px;
-  justify-content: center;
-  gap: 24px;
-}
-.modal {
-  width: 1112px;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feedback-form {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px;
-  border-radius: 8px;
-  gap: 16px;
-}
-label {
-  color: #2e2f42;
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.64px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+input[type='text'] {
+  width: 272px;
   gap: 8px;
-}
-input {
-  width: 360px;
-  flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #808080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 8px 12px;
 }
-input:hover {
-  border: 1px solid #000;
+input[type='text']:hover {
+  border-color: black;
 }
-input:active {
-  border: 1px solid #808080;
+input[type='text']:active {
+  border-color: #4e75ff;
 }
-textarea {
-  width: 360px;
-  height: 80px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #808080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  resize: none;
-  padding: 14px 24px;
-}
-button {
-  color: #fff;
+button[type='button'] {
+  width: 75px;
+  height: 40px;
+  top: 372px;
+  left: 28px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  gap: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.64px;
-  display: flex;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 8px;
-  border: none;
+  letter-spacing: 0.04em;
+  text-align: left;
   background: #4e75ff;
+  border: none;
+  text-align: center;
+  color: #ffffff;
 }
-button:hover {
+button[type='button']:hover {
   background: #6c8cff;
+}
+button:disabled,
+button:disabled:hover {
+  background-color: #cfcfcf;
+}
+
+.timer {
+  display: flex;
+  height: 72px;
+  gap: 24px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.value {
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+}
+.label {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e2f42;
+}
+.form {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.delay {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-top: 6px;
+  width: 330px;
+  height: 40px;
+}
+*/ fieldset:hover {
+  border-color: black;
+}
+.delay:hover {
+  border-color: black;
+}
+fieldset label {
+  text-align: center;
+  margin-right: 48px;
+}
+.create-btn {
+  width: 330px;
+  height: 40px;
+  top: 226px;
+  left: 156px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background: #4e75ff;
+  border: none;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.create-btn:hover {
+  background: #6c8cff;
+}
+.fieldset {
+  max-width: 330px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-top: 12px;
+  padding: 16px 0 8px 48px;
 }
